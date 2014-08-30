@@ -52,6 +52,7 @@ void kernel_entry(uint32_t magic, MULTIBOOT_INFO *multiboot_info)
     init_pit();
     init_pic();
     init_inthandler();
+    enable_paging();
 
     io_sti();
 

@@ -11,7 +11,7 @@ bool init_v_memory()
         return false;
     }
     set_page_directory((uintptr_t)kernel_directory_table);
-    enable_paging();
+    //enable_paging();
     printf(TEXT_MODE_SCREEN_RIGHT, "Paging enable!");
 
     return true;
